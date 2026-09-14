@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="result-card">
+
+        <h1>🎯 Prediction Result</h1>
+
+        <div class="score-circle">
+
+            <h2>{{ score }}</h2>
+
+            <p>/100</p>
+
+        </div>
+
+        <div class="result-grid">
+
+            <div class="result-box">
+
+                <h3>🏆 Grade</h3>
+
+                <p>{{ grade }}</p>
+
+            </div>
+
+            <div class="result-box">
+
+                <h3>📈 Performance</h3>
+
+                <p>{{ performance }}</p>
+
+            </div>
+
+            <div class="result-box">
+
+                <h3>🤖 Confidence</h3>
+
+                <p>{{ confidence }}%</p>
+
+            </div>
+
+        </div>
+
+        <div class="details">
+
+            <h2>Student Inputs</h2>
+
+            <table>
+
+                <tr>
+                    <td>📚 Study Hours</td>
+                    <td>{{ study_hours }}</td>
+                </tr>
+
+                <tr>
+                    <td>🏫 Attendance</td>
+                    <td>{{ attendance }}%</td>
+                </tr>
+
+                <tr>
+                    <td>🙋 Participation</td>
+                    <td>{{ participation }}/10</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="recommendation">
+
+            <h2>💡 AI Recommendation</h2>
+
+            <p>{{ recommendation }}</p>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="/">
+                <button>🔄 Predict Again</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

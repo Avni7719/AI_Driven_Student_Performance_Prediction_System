@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Student Performance Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🎓 AI Student Performance Predictor</h1>
+
+        <p class="subtitle">
+            Predict a student's final score using Machine Learning
+        </p>
+
+        <form action="/predict" method="POST">
+
+            <div class="input-group">
+
+                <label>📚 Weekly Study Hours</label>
+
+                <input
+                    type="number"
+                    name="study_hours"
+                    step="0.1"
+                    min="0"
+                    max="40"
+                    placeholder="Example: 18"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>🏫 Attendance Percentage</label>
+
+                <input
+                    type="number"
+                    name="attendance"
+                    step="0.1"
+                    min="0"
+                    max="100"
+                    placeholder="Example: 85"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>🙋 Class Participation (1 - 10)</label>
+
+                <input
+                    type="number"
+                    name="participation"
+                    min="1"
+                    max="10"
+                    placeholder="Example: 8"
+                    required>
+
+            </div>
+
+            <button type="submit">
+
+                Predict Performance
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
