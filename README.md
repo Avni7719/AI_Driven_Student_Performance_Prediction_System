@@ -1,113 +1,157 @@
-# AI-Driven Student Performance Prediction System
+AI-Driven Student Performance Prediction System
 
-> **IBM PBL Internship Project**
+IBM PBL Internship Project
 
-A Machine Learning project developed as part of the **IBM PBL (Project-Based Learning) Internship**. The system predicts the **total score** of a student based on study habits and academic performance using multiple regression models.
+A Machine Learning project developed as part of the IBM PBL (Project-Based Learning) Internship. The system predicts the total score of a student based on study habits and academic performance using multiple regression models.
 
-The project compares **Linear Regression**, **Decision Tree Regressor**, and **Random Forest Regressor** to identify the best-performing model. It provides predictions for a **random student from the test dataset** through both a Python script and a Flask web application.
+The project compares Linear Regression, Decision Tree Regressor, and Random Forest Regressor to identify the best-performing model. It provides predictions for a random student from the test dataset through both a Python script and a Flask web application.
 
----
+📌 Project Overview
 
-# Project Overview
-
-This project was developed as part of the **IBM PBL Internship** to apply Machine Learning concepts to an educational performance prediction problem.
+This project was developed as part of the IBM PBL Internship to apply Machine Learning concepts to an educational performance prediction problem.
 
 Educational institutions can use predictive analytics to estimate student performance and identify learning trends. This project trains multiple machine learning models on a large student performance dataset and predicts the final score of unseen students.
 
-The project covers the complete Machine Learning workflow, including:
+The project covers the complete Machine Learning workflow:
 
-- Data preprocessing
-- Exploratory Data Analysis (EDA)
-- Feature selection
-- Train-test splitting
-- Model training
-- Model comparison
-- Model evaluation
-- Model serialization
-- Prediction
-- Flask web application integration
+Data preprocessing
 
----
+Exploratory Data Analysis (EDA)
 
-# Internship Information
+Feature selection
 
-| Details | Information |
-|---------|-------------|
-| **Program** | IBM PBL Internship |
-| **Project** | AI-Driven Student Performance Prediction System |
-| **Domain** | Machine Learning / Artificial Intelligence |
-| **Student** | Avni Gupta |
-| **Technology** | Python, Machine Learning, Flask |
+Train-test splitting
 
----
+Model training
 
-# Features
+Model comparison
 
-- Predict student total score
-- Predict performance for a **random student** from the test dataset
-- Compare multiple ML algorithms
-- Automatically save the best-performing model
-- Evaluate model performance using regression metrics
-- Flask web application
-- Clean and modular project structure
-- Easy to extend with additional features
+Model evaluation
 
----
+Model serialization
 
-# Dataset
+Prediction
 
-- **Source:** Kaggle
-- **Rows:** 1,000,000
-- **Columns:** 6
+Flask web application integration
 
-## Features
+🎓 Internship Information
 
-| Column | Description |
-|--------|-------------|
-| `student_id` | Unique student ID |
-| `weekly_self_study_hours` | Weekly study hours |
-| `attendance_percentage` | Attendance percentage |
-| `class_participation` | Class participation score |
-| `total_score` | Final score (Target) |
-| `grade` | Student grade |
+Details
 
----
+Information
 
-# Technologies Used
+Program
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Joblib
-- Flask
+IBM PBL Internship
 
----
+Project
 
-# Machine Learning Models
+AI-Driven Student Performance Prediction System
+
+Domain
+
+Machine Learning / Artificial Intelligence
+
+Student
+
+Avni Gupta
+
+Technology
+
+Python, Machine Learning, Flask
+
+✨ Features
+
+Predict student total score
+
+Predict performance for a random student from the test dataset
+
+Compare multiple ML algorithms
+
+Automatically save the best-performing model
+
+Evaluate model performance using regression metrics
+
+Flask web application
+
+Clean and modular project structure
+
+Easy to extend with additional features
+
+📊 Dataset
+
+Source: Kaggle
+
+Rows: 1,000,000
+
+Columns: 6
+
+Dataset Features
+
+Column
+
+Description
+
+student_id
+
+Unique student ID
+
+weekly_self_study_hours
+
+Weekly study hours
+
+attendance_percentage
+
+Attendance percentage
+
+class_participation
+
+Class participation score
+
+total_score
+
+Final score (Target)
+
+grade
+
+Student grade
+
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+Scikit-learn
+
+Joblib
+
+Flask
+
+🤖 Machine Learning Models
 
 The project uses and compares the following regression algorithms:
 
-### 1. Linear Regression
+1. Linear Regression
 
 A statistical model used to predict the target variable based on the relationship between input features and the target.
 
-### 2. Decision Tree Regressor
+2. Decision Tree Regressor
 
 A tree-based machine learning algorithm that makes predictions by splitting the dataset based on feature values.
 
-### 3. Random Forest Regressor
+3. Random Forest Regressor
 
 An ensemble learning algorithm that combines multiple decision trees to improve prediction performance.
 
-The project automatically compares all models and saves the model with the highest **R² Score**.
+The project automatically compares all models and saves the model with the highest R² Score.
 
----
+📁 Project Structure
 
-# Project Structure
-
-```text
 Student_Performance_Prediction/
 │
 ├── dataset/
@@ -135,7 +179,9 @@ Student_Performance_Prediction/
 ├── app.py
 ├── requirements.txt
 └── README.md
-Workflow
+
+🔄 Workflow
+
 Dataset
    │
    ▼
@@ -167,41 +213,54 @@ Prediction
    │
    ▼
 Flask Web Application
-Evaluation Metrics
+
+📈 Evaluation Metrics
 
 The models are evaluated using the following regression metrics:
 
 Mean Absolute Error (MAE)
+
 Mean Squared Error (MSE)
+
 Root Mean Squared Error (RMSE)
+
 R² Score
 
 These metrics are used to compare the prediction performance of the different regression models.
 
-Installation
-Clone the Repository
+🚀 Installation
+
+1. Clone the Repository
+
 git clone https://github.com/Avni7719/AI_Driven_Student_Performance_Prediction_System.git
 
 cd AI_Driven_Student_Performance_Prediction_System
-Create Virtual Environment
+
+2. Create Virtual Environment
+
 Windows
+
 python -m venv venv
 
 Activate the virtual environment:
 
 venv\Scripts\activate
-macOS/Linux
+
+macOS / Linux
+
 python3 -m venv venv
 
 Activate:
 
 source venv/bin/activate
-Install Dependencies
 
-Install all required Python packages using:
+3. Install Dependencies
+
+Install all required Python packages:
 
 pip install -r requirements.txt
-Train the Model
+
+🧠 Train the Model
 
 Run the following command:
 
@@ -210,11 +269,16 @@ python src/train.py
 This will:
 
 Train all machine learning models
+
 Compare their performance
+
 Select the best-performing model
+
 Save the best model
+
 Save test data for prediction
-Predict a Random Student
+
+🔮 Predict a Random Student
 
 Run:
 
@@ -223,6 +287,7 @@ python src/predict.py
 The program selects a random student from the test dataset and generates a performance prediction.
 
 Example Output
+
 =======================================================
          STUDENT PERFORMANCE REPORT
 =======================================================
@@ -241,9 +306,10 @@ Prediction Error     : 0.61
 
 Model Used           : Linear Regression
 =======================================================
-Run Flask Application
 
-Start the Flask web application using:
+🌐 Run Flask Application
+
+Start the Flask web application:
 
 python app.py
 
@@ -255,34 +321,55 @@ Open the URL in your browser.
 
 Click Predict Random Student to generate a prediction for a randomly selected student from the test dataset.
 
-Results
+📊 Results
 
 The project compares the performance of the three machine learning models using the R² Score.
 
-Model	R² Score
-Linear Regression	0.6600
-Decision Tree	0.4320
-Random Forest	0.6550
+Model
+
+R² Score
+
+Linear Regression
+
+0.6600
+
+Decision Tree
+
+0.4320
+
+Random Forest
+
+0.6550
 
 The model comparison is based on the reported R² scores from the project.
 
 Best Model based on the reported results: Linear Regression
 
-Future Enhancements
+🔮 Future Enhancements
 
-The following improvements can be added to the project in the future:
+The following improvements can be added to the project:
 
 Student performance dashboard
+
 Feature importance visualization
+
 SHAP Explainable AI
+
 Model hyperparameter tuning
+
 User authentication
+
 Database integration
+
 Student report generation
+
 Model deployment on Render or Railway
+
 Docker support
+
 REST API using Flask/FastAPI
-Requirements
+
+📦 Requirements
 
 The project requires the following Python libraries:
 
@@ -296,43 +383,53 @@ flask
 Install all dependencies using:
 
 pip install -r requirements.txt
-Learning Outcomes
+
+🎯 Learning Outcomes
 
 This project provides practical experience in:
 
 Data preprocessing
+
 Exploratory Data Analysis (EDA)
+
 Regression algorithms
+
 Model training
+
 Model evaluation
+
 Model comparison
+
 Model serialization using Joblib
+
 Flask integration
+
 Predicting unseen data
+
 Building an end-to-end Machine Learning project
-IBM PBL Internship
+
+🎓 IBM PBL Internship
 
 This project was developed as part of the IBM PBL Internship by Avni Gupta.
 
 The project demonstrates the practical application of Machine Learning techniques to predict student academic performance using educational data.
 
-Author
+👩‍💻 Author
+
 Avni Gupta
 
 IBM PBL Internship Project
 
 GitHub
 
-https://github.com/Avni7719
+Avni7719
 
 LinkedIn
 
-https://www.linkedin.com/in/avni-gupta-186366281
+Avni Gupta
 
-License
+📄 License
 
 This project is licensed under the MIT License.
 
 ⭐ If you found this project useful, consider giving it a star on GitHub!
-
-This keeps the original project's dataset, models, metrics, workflow, structure, and implementation details while adding the **IBM PBL Internship** context and Avni Gupta's profile information. :contentReference[oaicite:0]{index=0}
