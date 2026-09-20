@@ -335,5 +335,4 @@ This project is licensed under the MIT License.
 
 ⭐ If you found this project useful, consider giving it a star on GitHub!
 
-
-This keeps the original project's dataset, models, metrics, workflow, struct
+This keeps the original project's dataset, models, metrics, workflow, structure, and implementation details while adding the **IBM PBL Internship** context and Avni Gupta's profile information. :contentReference[oaicite:0]{index=0}
